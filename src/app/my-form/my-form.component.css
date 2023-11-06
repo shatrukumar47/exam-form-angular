@@ -1,0 +1,44 @@
+#cont{
+    padding: 30px 60px;
+    width: 400px;
+    margin: auto;
+    margin-top: 40px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    box-shadow: rgba(128, 128, 128, 0.589) 7px 3px 5px;
+}
+
+.input-cont{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.input-cont > input{
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid gray;
+}
+
+select{
+    font-size: 20px;
+    padding: 5px;
+}
+
+button{
+    padding: 10px 30px;
+    background: rgb(36, 148, 36);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+button:hover{
+    background: green;
+}

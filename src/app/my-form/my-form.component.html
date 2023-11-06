@@ -1,0 +1,53 @@
+<div id="cont">
+  <form (ngSubmit)="handleSubmit($event)">
+    <div class="input-cont">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="name" [(ngModel)] = "name" required />
+    </div>
+
+    <div class="input-cont">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="email" [(ngModel)] = "email" required />
+    </div>
+
+    <div class="input-cont">
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        minlength="5"
+        placeholder="password"
+        [(ngModel)] = "password" required
+      />
+    </div>
+
+    <div class="input-cont">
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" placeholder="age" [(ngModel)] = "age" required />
+    </div>
+
+    <div class="input-cont">
+      <label for="age">Country</label>
+      <select name="country" id="country" [(ngModel)] = "country" required>
+        <option value="india">India</option>
+        <option value="usa">USA</option>
+      </select>
+    </div>
+
+    <div>
+      <input type="checkbox" name="TandC" value="true" [(ngModel)] = "TandC" required />
+      <span>Terms and Conditions</span>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<div>
+  <p>name: {{name}}</p>
+  <p>email: {{email}}</p>
+  <p>password: {{password}}</p>
+  <p>age: {{age}}</p>
+  <p>country: {{country}}</p>
+</div>
